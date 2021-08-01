@@ -44,7 +44,7 @@ It creates a ETW session client listening to the RDP server events. When the eve
 
 uhmm.. what?
 
-
+### The real heros
 Finally, many thanks to:
 - https://github.com/bi-zone/etw
 - https://github.com/kardianos/service
