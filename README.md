@@ -22,13 +22,15 @@ logtofile: true --> Boolean
 
 #### What is this?
 
-I needed to close disconnected RDP sessions faster than the minimum time allowed by Microsoft (Which is 1 minute)
+Basically, it closes disconnected RDP sessions faster than the minimum time allowed by Microsoft (Which is 1 minute)
 
-So I did this minimal service that control the RDP sessions status, and forces them to logoff inmediatly (or waiting a predefined amount of seconds)
+It's a minimal service that controls the RDP sessions status, and forces them to logoff inmediatly (or waiting a predefined amount of seconds)
 
 #### Why is this?
 
-I made this for a very particular environment where actually uses RemoteApp, not fully desktop RDP sessions. When a session get disconnected, I know is safe to log it off.
+The 1 minute limit from Microsoft was too much for my scenario. For several reasons, I REALLY needed to close these sessions inmediatly.
+
+I made this for a very particular environment where we actually use RemoteApp, not fully desktop RDP sessions. When a session get disconnected, I know is safe to log it off.
 
 However, be aware that this could not be feasible in all situations, and you are warned that it is -in most cases- a little dangerous to abruptly close an user session, and it may causes data lost
 
@@ -38,7 +40,9 @@ Of course, Windows only
 
 #### How is this?
 
-It creates a ETW session client listening to the RDP server events. When the event of a new "Disconnection" shows up, it triggers the logoff. A very simple program
+It creates a ETW session client listening to the RDP server events. When the event of a new "Disconnection" shows up, it triggers the logoff.
+
+A very simple program
 
 #### Who is this?
 
