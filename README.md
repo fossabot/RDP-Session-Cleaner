@@ -1,4 +1,6 @@
 # RDP Session Cleaner
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fyomono%2FRDP-Session-Cleaner.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fyomono%2FRDP-Session-Cleaner?ref=badge_shield)
+
 
 
 ## How to use it
@@ -56,3 +58,7 @@ Finally, many thanks to:
 they did the hard work
 
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fyomono%2FRDP-Session-Cleaner.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fyomono%2FRDP-Session-Cleaner?ref=badge_large)
